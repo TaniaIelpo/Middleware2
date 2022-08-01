@@ -1,0 +1,129 @@
+{
+	"info": {
+		"_postman_id": "6a007d35-1835-461c-af74-bb1d5420e3fb",
+		"name": "Middleware2",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "21003423"
+	},
+	"item": [
+		{
+			"name": "Basic get",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "monthNumber",
+						"value": "1",
+						"type": "text",
+						"disabled": true
+					}
+				],
+				"url": {
+					"raw": "localhost:8080",
+					"host": [
+						"localhost"
+					],
+					"port": "8080"
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "MonthNumberABSENT",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "monthNumber",
+						"value": "",
+						"type": "text",
+						"disabled": true
+					}
+				],
+				"url": {
+					"raw": "localhost:8080/months",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"months"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "MonthNumberEMPTY",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "monthNumber",
+						"value": "",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "localhost:8080/months",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"months"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "MonthNumberNOTINLIST",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "monthNumber",
+						"value": "7",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "localhost:8080/months",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"months"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "MonthNumberINLIST",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "monthNumber",
+						"value": "5",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "localhost:8080/months",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"months"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
