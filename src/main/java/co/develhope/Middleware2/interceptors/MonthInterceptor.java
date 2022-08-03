@@ -36,6 +36,7 @@ public class MonthInterceptor implements HandlerInterceptor {
     public boolean preHandle(HttpServletRequest request,
                              HttpServletResponse response,
                              Object handler) throws Exception {
+        if(!request.getRequestURL().toString().contains("/months")) return true;
         //takes the header monthNumber from the request
        String monthHeader =request.getHeader("monthNumber");
         //if monthNumber is null/empty then returns an HTTP Bad Request error
